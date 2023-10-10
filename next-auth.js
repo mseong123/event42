@@ -5,8 +5,8 @@ import FortyTwoProvider from "next-auth/providers/42-school";
 export default NextAuth({
   providers: [
     FortyTwoProvider({
-      clientId: process.env.FORTYTWO_CLIENT_ID,
-      clientSecret: process.env.FORTYTWO_CLIENT_SECRET,
+      clientId: process.env.FORTY_TWO_CLIENT_ID,
+      clientSecret: process.env.FORTY_TWO_CLIENT_SECRET,
     }),
   ],
 })
