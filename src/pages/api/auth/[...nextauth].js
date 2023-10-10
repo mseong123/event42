@@ -11,6 +11,7 @@ export default NextAuth({
   pages: {
     signIn: '/Login', // Replace with the path to your custom sign-in page
   },
+  secret: process.env.NEXTAUTH_SECRET,
   callbacks: {
     
   
