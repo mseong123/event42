@@ -8,6 +8,9 @@ export default NextAuth({
       clientSecret: process.env.FORTY_TWO_CLIENT_SECRET,
     }),
   ],
+  pages: {
+    signIn: '/Login', // Replace with the path to your custom sign-in page
+  },
   callbacks: {
     
   
