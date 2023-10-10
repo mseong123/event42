@@ -8,4 +8,9 @@ export default NextAuth({
       clientSecret: process.env.FORTY_TWO_CLIENT_SECRET,
     }),
   ],
+  callbacks: {
+    async redirect(url, baseUrl) {
+      return baseUrl;
+    },
+  },
 })
