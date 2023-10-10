@@ -14,7 +14,7 @@ export default function Dashboard() {
 	const [ mydata, setMydata] = useState([])
 	useEffect(()=>{
 		session?getMyInfo(session).then((data)=>setMydata(data)):null;
-	})
+	},[session])
 	return(
 		
 		<div>
